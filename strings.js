@@ -32,7 +32,9 @@
 //    return [1,2,3,4,5,6,7,8,9,10].map(item => `${item} * ${number} = ${item*number}`).join('\n');
 //  }
 
-//You're writing code to control your town's traffic lights. You need a function to handle each change from green, to yellow, to red, and then to green again.
+//You're writing code to control your town's traffic lights. You need a
+//function to handle each change from green, to yellow, to red, and
+//then to green again.
 //Complete the function that takes a string as an argument representing the current state of the light and returns a string representing the state the light should change to.
 //For example, update_light('green') should return 'yellow'.
 
@@ -223,4 +225,48 @@
 //   arr.push(i);
 //  }
 //  return arr;
+//}
+
+//Given an array of integers nums and an integer target, return indices
+//of the two numbers such that they add up to target.
+
+//You may assume that each input would have exactly one solution,
+//and you may not use the same element twice.
+
+//You can return the answer in any order.
+
+//var twoSum = function(nums, target) {
+//  const map = new Map()
+  
+//  for (let i=0; i<=nums.length;i++){
+//      let num1 = nums[i];
+//      let num2 = target - num1
+//      if(map.has(num2)) {
+//          return [i, map.get(num2)];
+//      }
+//      map.set(num1,i)
+//  }
+//};
+
+//Longest Common Prefix
+
+//Write a function to find the longest common prefix string amongst an
+//array of strings.
+
+//If there is no common prefix, return an empty string "".
+
+//var longestCommonPrefix = function(strs) {
+//  let prefix = ""
+//  if(strs === null || strs.length === 0) return prefix
+
+//  for (let i=0; i < strs[0].length; i++){ 
+//      const char = strs[0][i]
+
+//      for (let j = 1; j < strs.length; j++){ 
+//          if(strs[j][i] !== char) return prefix
+//      }
+//      prefix = prefix + char
+//  }
+
+//  return prefix
 //}

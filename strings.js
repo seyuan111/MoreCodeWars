@@ -202,3 +202,133 @@
 //    return Math.min(...args);    
 //  }
 //}
+
+//In Between
+
+//Complete the function that takes two integers (a, b, where a < b) and
+//return an array of all integers between the input parameters,
+//including them.
+
+//For example:
+
+//a = 1
+//b = 4
+//--> [1, 2, 3, 4]
+
+//function between(a, b) {
+  
+//  const arr = [];
+  
+//  for(let i=a; i <= b; i++){
+//   arr.push(i);
+//  }
+//  return arr;
+//}
+
+//Given an array of integers nums and an integer target, return indices
+//of the two numbers such that they add up to target.
+
+//You may assume that each input would have exactly one solution,
+//and you may not use the same element twice.
+
+//You can return the answer in any order.
+
+//var twoSum = function(nums, target) {
+//  const map = new Map()
+  
+//  for (let i=0; i<=nums.length;i++){
+//      let num1 = nums[i];
+//      let num2 = target - num1
+//      if(map.has(num2)) {
+//          return [i, map.get(num2)];
+//      }
+//      map.set(num1,i)
+//  }
+//};
+
+//Longest Common Prefix
+
+//Write a function to find the longest common prefix string amongst an
+//array of strings.
+
+//If there is no common prefix, return an empty string "".
+
+//var longestCommonPrefix = function(strs) {
+//  let prefix = ""
+//  if(strs === null || strs.length === 0) return prefix
+
+//  for (let i=0; i < strs[0].length; i++){ 
+//      const char = strs[0][i]
+
+//      for (let j = 1; j < strs.length; j++){ 
+//          if(strs[j][i] !== char) return prefix
+//      }
+//      prefix = prefix + char
+//  }
+
+//  return prefix
+//}
+
+//Create a method take that accepts a list/array and a number n, and
+//returns a list/array array of the first n elements from the list/array.
+
+//function take(arr, n) {
+//  return arr.slice(0,n);
+//}
+
+//Make a simple function called greet that returns the
+//most-famous "hello world!".
+
+//function greet(str){
+//  return "hello world!"
+//}
+
+//Now you have to write a function that takes an argument and returns
+//the square of it.
+
+//function square(str){
+//  return str*str;
+//}
+
+//You get any card as an argument. Your task is to return
+//a suit of this card.
+
+//function defineSuit(card) {
+//  if(card.includes("♣")){
+//    return 'clubs';
+//  }else if(card.includes("♦")){
+//    return 'diamonds';
+//  }else if(card.includes("♥")){
+//    return 'hearts';
+//  }else if(card.includes("♠")){
+//    return 'spades';
+//  }
+//}
+
+//Timmy & Sarah think they are in love, but around where they live,
+//they will only know once they pick a flower each. If one of the flowers
+//has an even number of petals and the other has an odd number of petals
+//it means they are in love.
+
+//Write a function that will take the number of petals of each flower
+//and return true if they are in love and false if they aren't.
+
+//function lovefunc(flower1, flower2){
+//  if (flower1 % 2 === 0 && flower2 % 2 === 1){
+//    return true
+//  }else if (flower1 % 2 === 1 && flower2 % 2 === 0){
+//    return true
+//  }else{
+//    return false
+//  }
+//}
+
+//Define a method hello that returns "Hello, Name!" to a given name,
+//or says Hello, World! if name is not given (or passed as an empty String).
+
+//Assuming that name is a String and it checks for user typos to return a
+//name with a first capital letter (Xxxx).
+
+//function hello(name) {
+//  return `Hello, ${name ? name.charAt(0).toUpperCase() + name.slice(1).toLowerCase() : "World"}!`;
+//}
